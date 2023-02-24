@@ -1,0 +1,200 @@
+# Python version 3.11.1 
+>>> l = [1,2,3,4,5,6,7,8,7,6]
+>>> l
+[1, 2, 3, 4, 5, 6, 7, 8, 7, 6]
+>>> l[1]
+2
+>>> l[1:1]
+[]
+>>> l[1:2]
+[2]
+>>> l[1:2]
+[2]
+>>> range
+<class 'range'>
+>>> range(1,2)
+range(1, 2)
+>>> range(1,4)
+range(1, 4)
+>>> l2 = [x*2 for x in range(5)]
+>>> l2
+[0, 2, 4, 6, 8]
+>>> l2 = [x*2 for x in range(1, 4)]
+>>> l2
+[2, 4, 6]
+>>> l2 = [x*2 for x in range(2, 30, 5)]
+>>> l2
+[4, 14, 24, 34, 44, 54]
+>>> l2[1:4]
+[14, 24, 34]
+>>> l2[1:4:-1]
+[]
+>>> l2[4:1:-1]
+[44, 34, 24]
+>>> l2[4:1:-1]
+[44, 34, 24]
+>>> l2[-1]
+54
+>>> l2[-1]
+54
+>>> l2[::-1]
+[54, 44, 34, 24, 14, 4]
+>>> l2[::-2]
+[54, 34, 14]
+>>> text = "ahsgd"
+>>> l2[0]
+4
+>>> l2[0] = 2
+>>> l2[0]
+2
+>>> l2
+[2, 14, 24, 34, 44, 54]
+>>> tup = (1,2,3,4)
+>>> tup
+(1, 2, 3, 4)
+>>> type(tup)
+<class 'tuple'>
+>>> text
+'ahsgd'
+>>> text[0]
+'a'
+>>> text[0] = "b"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> tup
+(1, 2, 3, 4)
+>>> tup[0]
+1
+>>> tup[0] = 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>>
+>>> tup = (x*2 for x in range(1, 4))
+>>> tup
+<generator object <genexpr> at 0x000001D2270B57D0>
+>>> tup.__dict__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'generator' object has no attribute '__dict__'. Did you mean: '__dir__'?
+>>> tup
+<generator object <genexpr> at 0x000001D2270B57D0>
+>>> tup2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tup2' is not defined. Did you mean: 'tup'?
+>>> tup.
+  File "<stdin>", line 1
+    tup.
+        ^
+SyntaxError: invalid syntax
+>>> tup
+<generator object <genexpr> at 0x000001D2270B57D0>
+>>> for element in tupÑ
+  File "<stdin>", line 1
+    for element in tupÑ
+                       ^
+SyntaxError: expected ':'
+>>> for element in tup:
+...     print(tup)
+...
+<generator object <genexpr> at 0x000001D2270B57D0>
+<generator object <genexpr> at 0x000001D2270B57D0>
+<generator object <genexpr> at 0x000001D2270B57D0>
+>>>     print(element)
+  File "<stdin>", line 1
+    print(element)
+IndentationError: unexpected indent
+>>> for element in tup:
+...     print(element)
+...
+>>> tup = (1,2,3)
+>>> def func(x):
+...     return x*2, x**2
+...
+>>> a = func(2)
+>>> a
+(4, 4)
+>>> type(a)
+<class 'tuple'>
+>>> a, b = func(3)
+>>> a
+6
+>>> b
+9
+>>> class Many:
+...     pass
+...
+>>> Many
+<class '__main__.Many'>
+>>> for i in range(1, 65):
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1
+>>>
+>>>
+>>> many = Many()
+>>> for i in range(1, 65):
+...     setattr(many, "var_num_" + str(i), i)
+...
+>>> many
+<__main__.Many object at 0x000001D2276A63D0>
+>>> many.__dict__
+{'var_num_1': 1, 'var_num_2': 2, 'var_num_3': 3, 'var_num_4': 4, 'var_num_5': 5, 'var_num_6': 6, 'var_num_7': 7, 'var_num_8': 8, 'var_num_9': 9, 'var_num_10': 10, 'var_num_11': 11, 'var_num_12': 12, 'var_num_13': 13, 'var_num_14': 14, 'var_num_15': 15, 'var_num_16': 16, 'var_num_17': 17, 'var_num_18': 18, 'var_num_19': 19, 'var_num_20': 20, 'var_num_21': 21, 'var_num_22': 22, 'var_num_23': 23, 'var_num_24': 24, 'var_num_25': 25, 'var_num_26': 26, 'var_num_27': 27, 'var_num_28': 28, 'var_num_29': 29, 'var_num_30': 30, 'var_num_31': 31, 'var_num_32': 32, 'var_num_33': 33, 'var_num_34': 34, 'var_num_35': 35, 'var_num_36': 36, 'var_num_37': 37, 'var_num_38': 38, 'var_num_39': 39, 'var_num_40': 40, 'var_num_41': 41, 'var_num_42': 42, 'var_num_43': 43, 'var_num_44': 44, 'var_num_45': 45, 'var_num_46': 46, 'var_num_47': 47, 'var_num_48': 48, 'var_num_49': 49, 'var_num_50': 50, 'var_num_51': 51, 'var_num_52': 52, 'var_num_53': 53, 'var_num_54': 54, 'var_num_55': 55, 'var_num_56': 56, 'var_num_57': 57, 'var_num_58': 58, 'var_num_59': 59, 'var_num_60': 60, 'var_num_61': 61, 'var_num_62': 62, 'var_num_63': 63, 'var_num_64': 64}
+>>> varnew = getattr(many, var_num_1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'var_num_1' is not defined
+>>> varnew = getattr(many, "var_num_1")
+>>> varnew
+1
+>>> many.var_new_1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Many' object has no attribute 'var_new_1'. Did you mean: 'var_num_1'?
+>>> many.var_num_1
+1
+>>> varnew = getattr(str.reverse())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'str' has no attribute 'reverse'
+>>> import string
+>>> string
+<module 'string' from 'C:\\Users\\violeta.macias\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\string.py'>
+>>> string.ascii_lower
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'string' has no attribute 'ascii_lower'. Did you mean: 'ascii_letters'?
+>>> string.ascii_letters
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+>>> varnew = getattr(string, "ascii_letters")
+>>> varnew
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+>>> hola = "hola"
+>>> varnew = getattr(hola, "lower")
+>>> varnew
+<built-in method lower of str object at 0x000001D2276A62F0>
+>>> hola = "Hola"
+>>> hola.varnew()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'varnew'
+>>> varnew(hola)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: str.lower() takes no arguments (1 given)
+>>> varnew()
+'hola'
+>>> varnew = getattr(hola, "lower")
+>>> varnew()
+'hola'
+>>> hola = "Holasdffsfd"
+>>> varnew()
+'hola'
+>>> varnew = getattr(hola, "lower")
+>>> varnew()
+'holasdffsfd'
+>>> exit()
